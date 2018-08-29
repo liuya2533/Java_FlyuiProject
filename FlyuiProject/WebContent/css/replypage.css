@@ -1,0 +1,223 @@
+
+			#tleft{
+				width: 774px;
+				height: 354px;
+				background: #fff;
+				margin-right: 16px;
+				
+			}
+			#trbttom,#trtop{
+				width: 380px;
+				background: #fff;
+			}
+			#trtop{
+				height: 202px;
+				margin-bottom: 16px;
+				
+			}
+			#trbttom{
+				height: 136px;
+				position: relative;
+			}
+			#trtop,#trbttom,#tleft{
+				float: left;
+			}
+			#logimg{
+				margin-left: 142px;
+				line-height: 61px;
+				margin-right: 75px;
+			}
+			#nav{height: 50px;
+			     background: #fff;
+			     margin-bottom: 16px;
+			     margin-top: 63px;
+			      }
+			#nav ul li{
+				float:left;
+				line-height: 48px;
+				margin-right: 43px;
+			}
+			
+			#nav ul li a{ 
+				font-size: 14px;
+				color: #333333;
+				transition: 0.3s;
+			}
+			#indx{
+				margin-left: 15%;
+			}
+			#nav ul li a#aindex{
+				color:#5fb878;
+			}
+			#nav ul li a:hover{
+				color:#009688;
+			}
+			#rart a.rarta{
+				padding: 10px 15px;
+				background: #009688;
+				color: #fff;
+				border-radius:2px; /*加圆角*/
+			}
+			#rart a.rarta:hover{
+				background: #33aba0;
+			}
+			#nav ul li#rart{
+				margin-right: 20%;
+				float: right;
+			}
+			.title-img{
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				margin-left: 10px;
+			}
+			.title-user{
+				cursor: pointer;
+			}
+			.nav-line{
+				color:#D5D5D5;
+			}
+			.nav-my{
+				
+				cursor: pointer;
+			}
+			#content{
+				width: 85%;
+				margin-top: 20px;
+				margin-left: 15%;
+			}
+			.content-left-top{
+				background: #fff;
+				width: 52%;
+				
+				float: left;
+			}
+			.content-right-top{
+				width: 23%;
+				
+				background: #fff;
+				float: left;
+				margin-left:20px ;
+			}
+			.thisweek{
+		    	height: 400px;
+		    	width: 100%;
+		    	background: #fff;
+		    	float: left;
+		    	margin-top: 18px;
+		    }
+		    .thisweek-this{
+		    	height: 50px;
+		    	width: 100%;
+		    	border-bottom: 1px dashed #D5D5D5;
+		    	line-height: 50px;
+		    	text-indent: 20px;
+		    	font-size: 17px;
+		    	
+		    }
+		    .thisweek-li{
+		    	margin-top: 15px;
+		    	line-height: 20px;
+		    	margin-left: 20px;
+		    }
+		    .content-panel{
+		    	margin: 10px;
+		    }
+		    .view-t{
+		    	color: #fff;
+		    	background: #009688;
+		    	border-radius: 2px;
+		    	padding: 5px 8px;
+		    	margin-right: 5px;
+		    }
+		    .view-w{
+		    	color: #fff;
+		    	background: #999999;
+		    	border-radius: 2px;
+		    	padding: 5px 8px;
+		    	margin-right: 600px;
+		    }
+		    .view-2{
+		    	line-height: 30px;
+		    	text-align: center;
+		    	vertical-align: middle;
+		    }
+		    .content-user{
+		    	height: 100px;
+		    	width: 100%;
+		    	background: #F2F2F2;
+		    	position: relative;
+		    	
+		    }
+		    .content-user-img{
+		    	height: 70px;
+		    	width: 70px;
+		    	border-radius: 2px;
+		    }
+		    .content-user-a{
+		    	left: 20px;
+		    	top: 15px;
+		    	position: absolute;
+		    }
+		    .content-user-div1{
+		    	position: absolute;
+		    	top: 20px;
+		    	left: 110px;
+		    }
+		    .content-user-div2{
+		    	position: absolute;
+		    	top: 60px;
+		    	left: 110px;
+		    }
+		    .content-user-span{
+		    	padding: 5px 10px;
+		    	background: #009688;
+		    	color: #fff;
+		    }
+		    table td{
+		    	border: 1px solid #D5D5D5;
+		    	width: 410px;
+		    	height: 50px;
+		    	text-indent: 20px;
+		    }
+		    .content-div-padding{
+		    	margin-top: 20px;
+		    }
+		    /*-----恢复区-----*/
+		   #reply{
+		   	
+		   	width: 52%;
+		   	background: #fff;
+		   	float: left;
+		   	margin-top: 25px;
+		   }
+		   .reply-ul{
+		   	margin-top:20px ;
+		   }
+		  .reply-ul-line{
+		  	float: left;
+		  	width: 43%;
+		  	margin-top: 20px;
+		  	border-bottom: 1px solid #D5D5D5;
+		  }
+		  .reply-ul-text{
+		  	float: left;
+		  	font-size: 22px;
+		  	padding: 10px;
+		  }
+		  .reply-ul-user{
+		  	position: relative;
+		  	height: 100px;
+		  }
+		  .reply-li-text{
+		  	top: 20px;
+		  }
+		  .reply-text{
+		  	margin-top: 20px;
+		  }
+		  .reply-button{
+		  	margin-top: 20px;
+		  	padding: 10px 20px;
+		  	background: #009688;
+		  	border-radius: 2px;
+		  }

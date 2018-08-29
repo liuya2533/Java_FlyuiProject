@@ -1,0 +1,68 @@
+
+			.fly-panel{
+				width: 70%;
+				height: 600px;
+				
+				margin: 80px auto;
+				background: #fff;
+			}
+			.publish-box{
+				margin:20px;
+			}
+			.publish-title{
+				height: 50px;
+				border-bottom: 1px solid #d5d5d5;
+				line-height: 50px;
+			}
+			.publish-title-text{
+				height: 50px;
+				line-height: 50px;
+				font-size: 17px;
+				color: #009688;
+				width: 100px;
+				border-bottom: 2px solid #009688;
+				text-indent: 15px;
+			}
+			.form-label{
+				float: left;
+			}
+			label{
+				height: 40px;
+				width: 100px;
+				border: 1px solid #D5D5D5;
+				line-height: 40px;
+				text-align: center;
+				background: #F2F2F2;
+			}
+			select{
+				float: left;
+				height: 41px;
+				width: 150px;
+				margin-right:20px ;
+			}
+			.form-div{
+				margin-top: 20px;
+			}
+			.form-text{
+				height: 39px;
+				width: 60%;
+			}
+			textarea{
+				height: 300px;
+				width: 100%;
+			}
+			#publish-button{
+				float: left;
+				height: 50px;
+				width: 100px;
+				color: #fff;
+				font-size: 17px;
+				background: #009688;
+				border: 1px solid #009688;
+				border-radius: 2px;
+				margin: 20px 0px;
+			}
+			.form-text2{
+				line-height: 40px;
+				color: #999999;
+			}

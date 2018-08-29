@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.UserInfoMapper">
+<select id="checkEmail" parameterType="String" resultType="int">
+ select count(*)
+ from userinfo
+ where email=#{email}
+</select>
+
+<insert id="addUserInfo" parameterType="Userinfo" >
+insert into userinfo(email,nickname,password,activecode)
+value(#{email},#{nickname},#{password},#{activecode})
+</insert>
+
+<select id="checkUserLogin" parameterType="Userinfo" resultType="Userinfo">
+select *
+from userinfo
+where email=#{email} and password=#{password} and active=1
+</select>
+
+<update id="updateKissNum" parameterType="Userinfo">
+update userinfo
+set kissnum=#{kissnum}
+where id=#{id}
+</update>
+
+
+<select id="getUserReplyNum" resultType="map">
+select userid,nickname,head_url,count(artorcommid) replynum
+from commentinfo c
+join userinfo u
+on c.userid=u.id
+group by userid
+order by count(artorcommid) DESC
+limit 0,20
+</select>
+
+<update id="ActiveUserinfo" parameterType="String">
+update userinfo
+set active=1
+where activecode=#{emailcode}
+</update>
+
+<delete id="DeleteOneUser" parameterType="String">
+delete from userinfo
+where activecode=#{emailcode} and active=0
+</delete>
+
+<update id="modifyPassword" parameterType="Userinfo" >
+update userinfo
+set password=#{password}
+where id=#{id}
+</update>
+
+<update id="updateUserinfo" parameterType="Userinfo">
+update userinfo
+set nickname=#{nickname},sex=#{sex},city=#{city},sign=#{sign},head_url=#{head_url}
+where id=#{id}
+</update>
+
+<select id="getUserinfoById" resultType="Userinfo" parameterType="int">
+select *
+from userinfo
+where id=#{id}
+</select>
+
+<update id="updateSignIn" parameterType="Userinfo">
+update userinfo
+set signintime=#{signintime},signinnum=signinnum+1
+where id=#{id}
+</update>
+</mapper>

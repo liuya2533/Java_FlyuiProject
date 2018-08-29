@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.CommentMapper">
+<insert id="addNewReply" parameterType="Commentinfo">
+insert into commentinfo(userid,artorcommid,content)
+values(#{userid},#{artorcommid},#{content})
+</insert>
+
+<select id="getCommentById" parameterType="int" resultType="map">
+select nickname,head_url,c.id,remarktime,goodnum,artorcommid,content,isaccept
+from commentinfo c
+join userinfo u
+on c.userid=u.id
+where artorcommid=#{id}
+</select>
+
+<select id="getThisWeekComment" resultType="map">
+select artorcommid,title,remarknum
+from commentinfo c
+join articleinfo a
+on c.artorcommid=a.id
+where remarktime>=subdate(curdate(),date_format(curdate(),'%w')-1)
+group by artorcommid
+order by remarknum desc
+</select>
+
+</mapper>

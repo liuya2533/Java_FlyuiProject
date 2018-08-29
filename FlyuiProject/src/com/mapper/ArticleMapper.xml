@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        
+<mapper namespace="com.mapper.ArticleMapper">
+<select id="getArticleType"  resultType="Articletype">
+ select *
+ from articletype
+</select>
+<insert id="addNewArticle" parameterType="Articleinfo">
+insert into articleinfo(title,content,type,paykiss,userid)
+value(#{title},#{content},#{type},#{paykiss},#{userid})
+</insert>
+
+<select id="getCommentAticle" resultType="map">
+select  head_url,nickname,title,remarknum,visitnum,type,paykiss,a.id,istop,isgood,releasetime,typename
+from userinfo u
+join articleinfo a
+on u.id=a.userid
+join articletype art
+on art.id=a.type
+group by releasetime desc
+limit 0,10
+</select>
+
+
+<select id="getGoodAticle" resultType="map">
+select  userid,head_url,nickname,title,remarknum,visitnum,type,paykiss,a.id,istop,isgood,releasetime,typename
+from userinfo u
+join articleinfo a
+on u.id=a.userid
+join articletype art
+on art.id=a.type
+where istop=1 or isgood=1
+group by istop desc,isgood desc,releasetime desc
+limit 0,4
+</select>
+
+<select id="getAllArticle" parameterType="PageLimitNum" resultType="map">
+select  userid,head_url,nickname,title,remarknum,visitnum,type,paykiss,a.id,istop,isgood,releasetime,typename
+from userinfo u
+join articleinfo a
+on u.id=a.userid
+join articletype art
+on art.id=a.type
+group by releasetime desc
+limit #{pageindex},#{pageSize}
+</select>
+
+<select id="getArticleTotal" resultType="int">
+select count(*)
+from articleinfo
+</select>
+
+<select id="getArticleById" parameterType="int" resultType="map">
+select  head_url,nickname,title,remarknum,visitnum,type,paykiss,a.id,istop,isgood,releasetime,typename,isdone,content
+from userinfo u
+join articleinfo a
+on u.id=a.userid
+join articletype art
+on art.id=a.type
+where a.id=#{id}
+</select>
+
+<update id="updateArticleRemarkNum" parameterType="int">
+update articleinfo
+set remarknum=remarknum+1
+where id=#{artid}
+</update>
+
+<update id="updateArticleVisitNum" parameterType="int">
+update articleinfo
+set visitnum=visitnum+1
+where id=#{artid}
+</update>
+
+<select id="getMyArticleById" parameterType="int" resultType="map">
+select *
+from articleinfo
+where userid=#{userid} and type=1
+order by releasetime desc
+</select>
+
+<select id="getMyremarkArticleById" parameterType="int" resultType="map">
+select a.id,a.title,remarktime,c.content
+from commentinfo c
+join articleinfo a
+on c.artorcommid=a.id
+where c.userid=#{userid}
+order by remarktime desc
+</select>
+</mapper>

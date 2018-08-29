@@ -1,0 +1,98 @@
+
+			.layui-container{
+				margin: 0 auto;
+				width: 70%;
+				height: 600px;
+				top: 79px;
+				position: relative;
+				box-sizing: border-box;
+			}
+			.layui-this{
+				color:#009688;
+			}
+			.layui-tab-title{
+				text-align: left;
+				position: relative;
+				left: 0;
+				height: 40px;
+				font-size: 0;
+				border-bottom:1px solid;
+				
+			}
+			.layui-tab-title li{
+				vertical-align: middle;
+				font-size:16px;
+				transition: 0.2s;
+				position:absolute;
+				line-height: 40px;
+				padding: 0 15px;
+				text-align: center;
+				cursor: pointer;
+				width: 60px;
+				}
+			.fly-panel-user{
+				padding-top:5px ;
+				
+			}
+			.fly-panel{
+				padding: 20px;
+				height: 500px;
+				margin-bottom:15px ;
+				border-radius: 2px;
+				background-color:#fff ;
+			}
+			.layui-form-label,.layui-tab-title{
+				border-color:#e6e6e6 ;
+			}	
+			.layui-form-mid{
+				position: relative;
+			
+			}
+			.layui-form-label{
+				float: left;
+				font-weight: 400;
+			}
+			label{
+				cursor: default;
+			}
+			.layui-this{
+				position: absolute;
+				left: 0px;
+				
+				border-bottom:2px solid #009688 ;
+			}
+			.layui-zuche{
+				left: 70px;
+			}
+			.layui-form-item{
+				margin-top: 20px;
+				line-height: 40px;
+			}
+			label{
+				border: 1px solid #E6E6E6;
+				height: 41px;
+				width: 100px;
+				text-align: center;
+				background: #fbfbfb;
+			}
+			input{
+				margin: 0;
+				height: 39px;
+				width: 200px;
+			}
+			button{
+				height: 40px;
+				width: 90px;
+				background: #009688;
+				border: 1px solid #009688;
+				border-radius: 2px;
+				color:#fff;
+				cursor: pointer;
+			}
+			span:hover{
+				color:#009688;
+				cursor: pointer;
+			}
+			a:hover{
+				color: #009688;
+			}

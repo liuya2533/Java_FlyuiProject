@@ -1,0 +1,15 @@
+@media only screen and (min-width: 768px) {
+	#top{
+		width: 750px;
+	}
+}
+@media only screen and (min-width: 992px) {
+	#top{
+		width: 970px;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	#top{
+		width: 1170px;
+	}
+}

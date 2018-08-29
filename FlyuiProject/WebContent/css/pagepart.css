@@ -1,0 +1,150 @@
+            #nav{height: 50px;
+			     background: #fff;
+			     margin-bottom: 16px;
+			     margin-top: 63px;
+			      }
+			#nav ul li{
+				float:left;
+				line-height: 48px;
+				margin-right: 43px;
+			}
+			
+			#nav ul li a{ 
+				font-size: 14px;
+				color: #333333;
+				transition: 0.3s;
+			}
+			#indx{
+				margin-left: 15%;
+			}
+			#nav ul li a#aindex{
+				color:#5fb878;
+			}
+			#nav ul li a:hover{
+				color:#009688;
+			}
+			#rart a.rarta{
+				padding: 10px 15px;
+				background: #009688;
+				color: #fff;
+				border-radius:2px; /*鍔犲渾瑙�*/
+			}
+			#rart a.rarta:hover{
+				background: #33aba0;
+			}
+			#nav ul li#rart{
+				margin-right: 20%;
+				float: right;
+			}
+			.nav-line{
+				color:#D5D5D5;
+			}
+			.nav-my{
+				
+				cursor: pointer;
+			}
+           /*----鍐呭閮ㄥ垎 ----*/
+            #content{
+            	left: 10%;
+		    	position: relative;
+				width: 90%;
+				background: #F2F2F2;
+				margin: 0 auto;
+				
+		    }
+		    /*----------缁煎悎-------*/
+		    #zonghe{
+		   	    width: 63%;
+				margin-bottom: 50px;
+				background: #fff;
+				margin-right: 16px;
+				margin-top: 18px;
+				position: relative;
+		   }
+		   /*-----------缁煎悎------*/
+		  #zongheli{
+		    	line-height: 48px;
+		    	height: 50px;
+		    	margin-top:0 ;
+		    }
+		    .zq{
+		    	width: 55px;
+		    	border-left:1px solid #d5d5d5 ;
+		    	padding: 0 15px;
+		    	line-height: 48px;
+		    	text-indent: 20px;
+		    }
+		    .zq:hover{
+		    	color: #009688;
+		    	cursor:pointer;
+		    }
+		    #zonghes{
+		    	width: 55px;
+		    	padding: 0 15px;
+		    	color: #009688;
+		    	cursor:pointer;
+		    }
+		    /*---甯栧瓙淇℃伅---*/
+		   .artlist{
+				position: relative;
+				border-top:1px dashed #d5d5d5 ;
+				height: 75px;
+			}
+			.artlist div,.artlist div img{
+				width: 45px;
+				height: 45px;
+			}
+			.artlist div{
+				position: absolute;
+				left: 15px;
+				top: 15px;
+			}
+			.arttitle{
+				position: absolute;
+				left: 75px;
+				top: 17px;
+				font-size: 16px;
+				
+			}
+			.arttitle span{
+				font-size: 12px;color: #5FB878; padding: 1px 5px;border: 1px solid #5FB878;border-radius:2px ;
+			}
+			.arttitle a{
+				color: #000;
+			}
+			.rattitle a:hover{
+				color:#009688;
+				
+			}
+			.artinfo{
+				position: absolute;
+				left: 75px;
+				bottom:15px;
+			}
+			.artinfo a,.artinfo span{
+				font-size: 12px;
+				color: #999;
+				margin-right:20px ;
+			}
+			.artinfo a:hover{
+				color:#009688;
+			}
+			.artinfo span.kissnum{
+				color: #ff5762;
+			}
+			.artjingtie{
+				position: absolute;
+				left:90%;
+				top: 17px;
+				font-size: 16px;}
+			.artjingtie span{ font-size: 12px;color: #FFFFFF;padding: 1px 5px;border: 1px solid red;border-radius:2px ; background: red;}
+		    .xiaoxinum{
+		    	position: absolute;
+		    	left: 90%;
+		    	bottom: 13px;
+		    	color: #999;
+		    }
+		    .more-solve{
+				margin-left: 35%;
+				padding-bottom: 30px;
+			}

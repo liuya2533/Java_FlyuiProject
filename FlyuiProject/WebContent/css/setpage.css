@@ -1,0 +1,153 @@
+
+			/*---------内容-----*/
+			#content{
+				width: 70%;
+				height: 1000px;
+				margin-top: 80px;
+				margin-left: 15%;
+			}
+			.content-item{
+				height: 700px;
+				width: 20%;
+				background:  #393d49;
+				float: left;
+			}
+			.content-text{
+				width: 70%;
+				height: 700px;
+				background: #fff;
+				margin-left: 20px;
+				float: left;
+			}
+			.content-item-li{
+				color: #fff;
+				height: 50px;
+				opacity: 0.5;
+				line-height: 50px;
+				text-indent: 30px;
+				font-size: 17px;
+				vertical-align: middle;
+				cursor: pointer;
+			}
+			.content-item-li-set{
+				color: #fff;
+				height: 50px;
+				background: #009688;
+				line-height: 50px;
+				text-indent: 30px;
+				font-size: 17px;
+				vertical-align: middle;
+				cursor: pointer;
+			}
+			.content-item-li:hover{
+				opacity: 1;
+				transform: 0.4s;
+				border-left: 5px solid #009688;
+				background: #999999;
+			}
+			
+			.content-text-panel{
+				margin: 20px;
+			}
+			.content-item-ul{
+				margin-top: 10px;
+			}
+			.content-text-ul{
+				margin-top: 10px;
+				height: 60px;
+				border-bottom: 1px solid #D5D5D5;
+			}
+			.content-text-li{
+				font-size:17px ;
+				float: left;
+				padding: 18px 30px;
+				cursor: pointer;
+				
+			}
+			.text-form-tab{
+				margin-top: 20px;
+				
+			}
+			label{
+				border: 1px solid #E6E6E6;
+				height: 41px;
+				width: 100px;
+				text-align: center;
+				background: #fbfbfb;
+				float: left;
+				line-height: 40px;
+			}
+			.text-form-text{
+				margin: 0;
+				height: 39px;
+				width: 250px;
+			}
+			.text-form-radio{
+				height: 20px;
+				width: 20px;
+				margin-left: 10px;
+				margin-right: 20px;
+				background: #009688;
+			}
+			textarea{
+				height: 150px;
+				width: 100%;
+			}
+			.text-form-button{
+				height: 50px;
+				width: 100px;
+				background: #009688;
+				color: #fff;
+				font-size: 16px;
+				border: hidden;
+				border-radius: 2px;
+			}
+			/*---- 上传头像 ----*/
+			.text-photo{
+				background: #F2F2F2;
+				height: 500px;
+				width: 500px;
+				position: relative;
+			}
+			.text-photo-button{
+				height: 50px;
+				width: 150px;
+				background: #009688;
+				position: absolute;
+				top: 50px;
+				left: 150px;
+				color: #fff;
+				border: hidden;
+				border-radius: 2px;
+				font-size: 16px;
+			}
+			.text-photo-file{
+				position: absolute;
+				top: 50px;
+				left: 150px;
+				height: 50px;
+				opacity: .01;
+				cursor: pointer;
+				
+			}
+			.text-photo-p{
+				color: #999999;
+				position: absolute;
+				top: 150;
+				left: 50px;
+				margin-top: 110px;
+				
+			}
+			.text-photo-img{
+				position: absolute;
+				top: 180px;
+				left: 100px;
+				height: 250px;
+				width: 250px;
+				border-radius: 50%;
+			}
+			.text-pass-div{
+				height: 50px;
+				width: 100%;
+				margin-bottom: 20px;
+			}
