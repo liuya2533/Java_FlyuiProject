@@ -21,15 +21,12 @@ public class ReleaseServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Userinfo user =(Userinfo)request.getSession().getAttribute("userinfo");
-		System.out.println(user==null);
 		if(user!=null) {
 			response.sendRedirect(request.getContextPath()+"/jsp/releasepage.jsp");
 		}else {
 			response.sendRedirect(request.getContextPath()+"/jsp/loginpage.jsp");
 		}
 	}
-
-	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		//获得当前登录者信息

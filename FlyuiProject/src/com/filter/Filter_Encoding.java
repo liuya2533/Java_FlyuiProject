@@ -9,7 +9,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 
-@WebFilter("/*")
+@WebFilter("")
 public class Filter_Encoding implements Filter {
     public Filter_Encoding() {
         // TODO Auto-generated constructor stub

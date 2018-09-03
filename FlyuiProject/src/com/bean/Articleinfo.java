@@ -10,9 +10,6 @@ public class Articleinfo {
  
   private String title;
 
-
-  private String content;
-
   private int istop;
 
   private int isgood;
@@ -35,8 +32,15 @@ public class Articleinfo {
 
   private Date releasetime;
 
-
-  public int getId() {
+  private String content;
+  
+   public String getContent() {
+	return content;
+}
+public void setContent(String content) {
+	this.content = content;
+}
+public int getId() {
     return id;
   }
   public void setId(int id){
@@ -48,14 +52,8 @@ public class Articleinfo {
   public void setTitle(String title){
     this.title = title;
   }
- 
-  public String getContent() {
-	return content;
-}
-public void setContent(String content) {
-	this.content = content;
-}
-public int getIstop() {
+
+  public int getIstop() {
     return istop;
   }
   public void setIstop(int istop){
